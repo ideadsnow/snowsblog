@@ -20,9 +20,9 @@ gravatarEmail = ""
 [params.page]
 # 是否使用 lightgallery
 lightgallery = true
+enableLastMod = false
 
 [params.page.toc]
-# TODO 这个好像不生效？
 # 是否使用目录
 enable = true
 # DoIt 新增 | 0.2.9 是否保持使用文章前面的静态目录
