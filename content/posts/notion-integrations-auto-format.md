@@ -306,4 +306,4 @@ async def update_blocks(self, batch_size: int = 3):
 
 ## 完整代码
 
-见 Github 仓库 https://github.com/ideadsnow/notion-auto-format
+见 [Github 仓库 https://github.com/ideadsnow/notion-auto-format](https://github.com/ideadsnow/notion-auto-format)
