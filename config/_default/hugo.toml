@@ -1,0 +1,73 @@
+baseURL = "http://localhost:1313/"
+languageCode = "zh-CN"
+# 是否包括中日韩文字
+hasCJKLanguage = true
+title = "Snow's Site"
+theme = "DoIt"
+
+
+[params]
+# DoIt 主题版本
+version = "0.4.0"
+
+[params.author]
+name = "Snow.Z"
+email = "ideadsnow@gmail.com"
+link = ""
+avatar = "https://webp.slightsnow.com/avatar.jpg"
+gravatarEmail = ""
+
+[params.page.toc]
+# TODO 这个好像不生效？
+# 是否使用目录
+enable = true
+# DoIt 新增 | 0.2.9 是否保持使用文章前面的静态目录
+keepStatic = false
+# 是否使侧边目录自动折叠展开
+auto = false
+
+[params.page.code]
+# 是否显示代码块的复制按钮
+copy = true
+maxShownLines = 50
+
+
+[menu]
+[[menu.main]]
+identifier = "posts"
+# 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+pre = ""
+# 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+post = ""
+name = "文章"
+url = "/posts/"
+# 当你将鼠标悬停在此菜单链接上时, 将显示的标题
+title = ""
+weight = 1
+
+[[menu.main]]
+identifier = "tags"
+pre = ""
+post = ""
+name = "标签"
+url = "/tags/"
+title = ""
+weight = 2
+
+[[menu.main]]
+identifier = "categories"
+pre = ""
+post = ""
+name = "分类"
+url = "/categories/"
+title = ""
+weight = 3
+
+
+# Hugo 解析文档的配置
+[markup]
+defaultMarkdownHandler = "goldmark"
+# 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+[markup.highlight]
+# false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+noClasses = false
