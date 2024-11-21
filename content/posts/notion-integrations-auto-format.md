@@ -19,7 +19,7 @@ title = 'Notion Integrations 开发：实现一个自动格式化工具'
 >
 > Notion users have access to a vast [library](https://www.notion.so/integrations/all) of existing integrations to enrich their experience further. For developers interested in creating custom solutions, Notion supports the development of both internal and public integrations. Both utilize the Notion API for workspace interactions.
 
-{{< image src="https://webp.slightsnow.com/2024/11/554a8f3a285314ff2f3240172e382ee0.png" caption="image_caption" >}}
+{{< image src="https://webp.slightsnow.com/2024/11/554a8f3a285314ff2f3240172e382ee0.png" caption="Notion Integrations" >}}
 
 而我们自己也可以非常方便地通过这个开放能力，实现一切自定义需求
 
@@ -31,7 +31,7 @@ title = 'Notion Integrations 开发：实现一个自动格式化工具'
 
 打开 [我的集成](https://www.notion.so/profile/integrations) 页面，创建一个新集成，并选择「读取内容」、「更新内容」、「插入内容」权限，保存该集成
 
-{{< image src="https://webp.slightsnow.com/2024/11/e6ca795386eaf55227a5560c7ef470b4.png" caption="image_caption" >}}
+{{< image src="https://webp.slightsnow.com/2024/11/e6ca795386eaf55227a5560c7ef470b4.png" caption="My Integrations" >}}
 
 **注意：** 这里会自动创建一个内部集成密钥，这个密钥将会是外部系统与 Notion 建立连接鉴权的唯一凭证。可以复制下来备用
 
@@ -290,15 +290,15 @@ async def update_blocks(self, batch_size: int = 3):
 
 初始文档
 
-{{< image src="https://webp.slightsnow.com/2024/11/360a31bbbf3fbbced8c53eecb7100787.png" caption="image_caption" >}}
+{{< image src="https://webp.slightsnow.com/2024/11/360a31bbbf3fbbced8c53eecb7100787.png" caption="初始文档" >}}
 
 执行格式化
 
-{{< image src="https://webp.slightsnow.com/2024/11/7354b3aac5d95b99ee4b9292713d3728.png" caption="image_caption" >}}
+{{< image src="https://webp.slightsnow.com/2024/11/7354b3aac5d95b99ee4b9292713d3728.png" caption="执行格式化" >}}
 
 最终效果
 
-{{< image src="https://webp.slightsnow.com/2024/11/1d711398419d552539230dc450acde44.png" caption="image_caption" >}}
+{{< image src="https://webp.slightsnow.com/2024/11/1d711398419d552539230dc450acde44.png" caption="最终效果" >}}
 
 
 标题、所有文本 Block 都被成功更新了！
