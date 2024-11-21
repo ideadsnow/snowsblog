@@ -17,6 +17,10 @@ link = ""
 avatar = "https://webp.slightsnow.com/avatar.jpg"
 gravatarEmail = ""
 
+[params.page]
+# 是否使用 lightgallery
+lightgallery = true
+
 [params.page.toc]
 # TODO 这个好像不生效？
 # 是否使用目录
