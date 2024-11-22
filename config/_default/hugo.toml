@@ -10,6 +10,10 @@ theme = "DoIt"
 # DoIt 主题版本
 version = "0.4.0"
 
+[params.home.profile]
+# Gravatar 邮箱, 用于优先在主页显示的头像
+gravatarEmail = "ideadsnow@gmail.com"
+
 [params.author]
 name = "Snow.Z"
 email = "ideadsnow@gmail.com"
