@@ -12,7 +12,7 @@ theme = "DoIt"
 # DoIt 主题版本
 version = "0.4.X"
 description = "This is a personal website of Snow.Z."
-keywords = ["Blog", "博客", "Snow", "SlightSnow",  "Snow.Z", "SnowsSite"]
+keywords = ["Blog", "博客", "Snow", "SlightSnow", "Snow.Z", "SnowsSite"]
 
 [params.home.profile]
 # Gravatar 邮箱, 用于优先在主页显示的头像
@@ -47,6 +47,14 @@ maxShownLines = 50
 [params.page.related]
 enable = true
 count = 3
+
+[params.analytics]
+enable = true
+# Google Analytics
+[params.analytics.google]
+id = "G-85J43KGENS"
+# 是否匿名化用户 IP
+anonymizeIP = true
 
 
 [menu]
