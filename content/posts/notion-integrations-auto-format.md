@@ -2,7 +2,7 @@
 date = '2024-11-20T22:00:00+08:00'
 draft = false
 title = 'Notion Integrations 开发：实现一个自动格式化工具'
-tags = []
+tags = ['Notion']
 categories = ["Handbook"]
 series = []
 +++
