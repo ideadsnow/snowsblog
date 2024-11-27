@@ -119,7 +119,7 @@ noClasses = false
 
 # 网站地图配置
 [sitemap]
-changefreq = "weekly"
+changefreq = "always"
 filename = "sitemap.xml"
 priority = 0.5
 
