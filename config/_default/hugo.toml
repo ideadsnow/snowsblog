@@ -32,7 +32,7 @@ gravatarEmail = ""
 [params.page]
 # 是否使用 lightgallery
 lightgallery = true
-enableLastMod = false
+enableLastMod = true
 
 [params.page.toc]
 # 是否使用目录
