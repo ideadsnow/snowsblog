@@ -16,7 +16,11 @@ keywords = ["Blog", "博客", "Snow", "SlightSnow", "Snow.Z", "SnowsSite"]
 
 [params.home.profile]
 # Gravatar 邮箱, 用于优先在主页显示的头像
-gravatarEmail = "ideadsnow@gmail.com"
+# gravatarEmail = "ideadsnow@gmail.com"
+enable = true
+avatarURL = "https://webp.slightsnow.com/avatar.jpg"
+title = "Hi, here is Snow's Site."
+
 
 [params.author]
 name = "Snow.Z"
