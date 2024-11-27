@@ -56,6 +56,10 @@ id = "G-85J43KGENS"
 # 是否匿名化用户 IP
 anonymizeIP = true
 
+[params.app]
+# modern SVG favicon to use in place of older style .png and .ico files
+svgFavicon = "favicon.svg"
+
 
 [menu]
 [[menu.main]]
