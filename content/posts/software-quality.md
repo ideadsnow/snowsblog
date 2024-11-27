@@ -2,7 +2,7 @@
 date = '2024-11-26T13:47:00+08:00'
 draft = false
 title = '再谈软件质量：关于事故的思考'
-tags = ['Think Different']
+tags = ['Thinking']
 categories = ['Engineering']
 series = []
 +++
