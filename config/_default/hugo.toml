@@ -67,7 +67,7 @@ anonymizeIP = true
 [params.header]
 [params.header.title]
 # URL of the LOGO
-logo = "/favicon.png"
+logo = "/favicon.svg"
 # title name
 name = "Snow's Site"
 # you can add extra information before the name (HTML format is supported), such as icons
