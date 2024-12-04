@@ -49,7 +49,7 @@ maxShownLines = 50
 
 # DoIt 新增 | 0.2.14 相关文章推荐配置
 [params.page.related]
-enable = true
+enable = false
 count = 3
 
 [params.analytics]
