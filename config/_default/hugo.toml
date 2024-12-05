@@ -19,7 +19,7 @@ keywords = ["Blog", "博客", "Snow", "SlightSnow", "Snow.Z", "SnowsSite"]
 # gravatarEmail = "ideadsnow@gmail.com"
 enable = true
 avatarURL = "https://webp.slightsnow.com/avatar.jpg"
-title = "Hi, here is Snow's Site."
+title = "Hi, here is Snow."
 
 
 [params.author]
