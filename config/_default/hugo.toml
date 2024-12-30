@@ -45,7 +45,14 @@ auto = false
 [params.page.code]
 # 是否显示代码块的复制按钮
 copy = true
+# 默认展开显示的代码行数
 maxShownLines = 50
+# 是否显示代码行号
+lineNos = true
+# 是否开启代码换行
+wrap = false
+# 是否显示代码块标题
+header = true
 
 # DoIt 新增 | 0.2.14 相关文章推荐配置
 [params.page.related]
