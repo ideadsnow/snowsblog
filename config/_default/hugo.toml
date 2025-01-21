@@ -59,6 +59,26 @@ header = true
 enable = false
 count = 3
 
+# DoIt 更改 | 0.2.0 评论系统设置
+[params.page.comment]
+enable = true
+# DoIt 新增 | 0.2.13 giscus 评论系统设置
+[params.page.comment.giscus]
+enable = true
+# owner/repo
+dataRepo = "ideadsnow/snowsblog"
+dataRepoId = "R_kgDONFSFmw"
+dataCategory = "Announcements"
+dataCategoryId = "DIC_kwDONFSFm84CmMuH"
+dataMapping = "pathname"
+dataReactionsEnabled = "1"
+dataEmitMetadata = "0"
+dataInputPosition = "bottom"
+lightTheme = "light"
+darkTheme = "dark"
+dataLang = "zh-CN"
+dataLoading = "lazy"
+
 [params.analytics]
 enable = true
 # Google Analytics
