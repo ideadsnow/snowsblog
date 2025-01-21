@@ -29,7 +29,7 @@ series = []
 
 通常，在谈到 Intel 和 AMD 的芯片时，我们会说到微处理器（microprocessors）或者中央处理器（CPU）。这些处理器从内存中提取指令。然后，每条指令通常按顺序执行。
 
-{{< image src="https://webp.slightsnow.com/2025/01/2fe246a59da016cadf42ee5237c220e8.png" caption="一个非常基本的 RISC CPU，不是 M1。指令从内存沿着蓝色箭头进入指令寄存器。在寄存器中，解码器会找出指令的内容，并通过红色控制线启动 CPU 的不同部分。ALU 对寄存器中的数字进行加减运算。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/2fe246a59da016cadf42ee5237c220e8.png" caption="一个非常基本的 RISC CPU，不是 M1。指令从内存沿着蓝色箭头进入指令寄存器。在寄存器中，解码器会找出指令的内容，并通过红色控制线启动 CPU 的不同部分。ALU 对寄存器中的数字进行加减运算。"  height="1000" width="500" >}}
 
 最基本的中央处理器是一种设备，其中包含一些名为寄存器的存储单元和一些名为算术逻辑单元（ALU）的计算单元。ALU 执行加法、减法和其他基本数学运算。不过，这些单元只与 CPU 寄存器相连。如果要将两个数字相加，就必须将这两个数字从内存中取出，然后输入中央处理器的两个寄存器。
 
@@ -44,7 +44,7 @@ store r1, 310
 
 这里的 r1 和 r2 就是上面提到的寄存器。现代 RISC CPU 无法对不在寄存器中的数字进行操作。例如，它无法将 RAM 中两个不同位置的两个数字相加。相反，它必须将这两个数拉到一个单独的寄存器中。这就是我们在这个简单例子中要做的。我们输入 RAM 中内存位置 150 的数字，并将其放入 CPU 中的寄存器 r1。接着，我们将地址 200 的内容放入寄存器 r2。只有这样，才能使用 add r1, r2 指令将这两个数字相加。
 
-{{< image src="https://webp.slightsnow.com/2025/01/0cfbd09674d4f928526e16dfafb3ff49.png" caption="老式机械计算器有两个寄存器：累加器和输入寄存器。现代 CPU 通常有十几个寄存器，而且是电子寄存器而非机械寄存器。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/0cfbd09674d4f928526e16dfafb3ff49.png" caption="老式机械计算器有两个寄存器：累加器和输入寄存器。现代 CPU 通常有十几个寄存器，而且是电子寄存器而非机械寄存器。"  height="1000" width="500" >}}
 
 寄存器的概念由来已久。例如，在这台老式机械计算器上，寄存器就是用来存放加法的数字的，这可能就是寄存器一词的由来？寄存器是登记输入数字的地方。
 
@@ -56,15 +56,15 @@ store r1, 310
 
 从根本上说，M1 是一个芯片上的完整计算机。M1 包含 CPU、图形处理单元 (GPU)、内存、输入和输出控制器，以及构成整台计算机的其他许多部件。这就是我们所说的片上系统（SoC）。
 
-{{< image src="https://webp.slightsnow.com/2025/01/3d3edf6d04cb172f24fbc00e364baa72.png" caption="M1 是芯片上的系统。也就是说，组成计算机的所有部件都放在一个硅芯片上。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/3d3edf6d04cb172f24fbc00e364baa72.png" caption="M1 是芯片上的系统。也就是说，组成计算机的所有部件都放在一个硅芯片上。"  height="1000" width="500" >}}
 
 如今，无论是 Intel 还是 AMD，只要购买芯片，就等于在一个封装中购买了多个微处理器。过去，电脑主板上会有多个物理上独立的芯片。
 
-{{< image src="https://webp.slightsnow.com/2025/01/679e5600656fb37b4516920742ae2357.png" caption="计算机主板示例。内存、CPU、图形卡、IO 控制器、网卡和许多其他组件都可以连接到主板上，以便相互通信。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/679e5600656fb37b4516920742ae2357.png" caption="计算机主板示例。内存、CPU、图形卡、IO 控制器、网卡和许多其他组件都可以连接到主板上，以便相互通信。"  height="1000" width="500" >}}
 
 由于我们今天能够在硅芯片上放置如此多的晶体管，因此 Intel 和 AMD 等公司开始将多个微处理器放在一个芯片上。今天，我们将这些芯片称为 CPU 内核。一个内核基本上是一个完全独立的芯片，可以从内存中读取指令并执行计算。
 
-{{< image src="https://webp.slightsnow.com/2025/01/74a6405ed00952ae547664000f2a4a65.png" caption="具有多个 CPU 内核的微芯片"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/74a6405ed00952ae547664000f2a4a65.png" caption="具有多个 CPU 内核的微芯片"  height="1000" width="500" >}}
 
 长期以来，这种在一个芯片中塞更多通用 CPU 内核的方式，一直都是提高性能的流行方案。但是现在，CPU 市场中有一个参与者另辟了一条蹊径。
 
@@ -91,7 +91,7 @@ Apple 没有添加更多的通用 CPU 内核，而是走了另一条路：他们
 
 ### Apple 的统一内存架构有什么特别之处？
 
-{{< image src="https://webp.slightsnow.com/2025/01/f633fb78a5ef6babd22a41db0e395b35.png" caption="蓝色部分可以看到多个 CPU 内核访问内存，绿色部分则显示大量 GPU 内核访问内存。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/f633fb78a5ef6babd22a41db0e395b35.png" caption="蓝色部分可以看到多个 CPU 内核访问内存，绿色部分则显示大量 GPU 内核访问内存。"  height="1000" width="500" >}}
 
 很长时间以来，廉价的入门电脑一直把 CPU 和 GPU 集成到同一块芯片上，而大家的对这种电脑的印象都是卡顿、慢。基本上过去大家提到“集成显卡”的时候的隐含的意思都是“慢”。
 
@@ -99,7 +99,7 @@ Apple 没有添加更多的通用 CPU 内核，而是走了另一条路：他们
 
 另一方面，GPU 会产生大量热量，独立的高性能显卡往往体积都相当巨大，携带了好几个夸张的风扇来降温，而且它们有自己的特殊的专用内存，可以为贪婪的 GPU 提供大量数据。
 
-{{< image src="https://webp.slightsnow.com/2025/01/9972b6aa7f8fcfdd4481eaf24b780355.png" caption="GeForce RTX 3080  GeForce RTX 3080 显卡"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/9972b6aa7f8fcfdd4481eaf24b780355.png" caption="GeForce RTX 3080  GeForce RTX 3080 显卡"  height="1000" width="500" >}}
 
 但是独立显卡有一个严重的问题，每当它们必须从 CPU 使用的内存中获取数据时，就必须经过主板上的 PCIe 总线，这条传输管道的吞吐量是很低的。
 
@@ -113,7 +113,7 @@ Apple 的统一内存架构试图解决所有这些问题，而不会有老式�
 
 当然，这种策略也是有代价的。获得这种高带宽内存（大容量）需要完全集成，这意味着你将剥夺用户升级内存的机会。但 Apple 试图尽量降低这个问题的影响（maybe…），也就是使用高速的固态硬盘，利用 Swap 能力直接将硬盘当成和老式内存性能差不太多的的扩展内存使用。
 
-{{< image src="https://webp.slightsnow.com/2025/01/168dde851c453c44e99a31175a7414c6.png" caption="Mac 在使用统一内存之前是如何使用 GPU 的。甚至还可以使用 Thunderbolt 3 线在电脑外安装显卡。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/168dde851c453c44e99a31175a7414c6.png" caption="Mac 在使用统一内存之前是如何使用 GPU 的。甚至还可以使用 Thunderbolt 3 线在电脑外安装显卡。"  height="1000" width="500" >}}
 
 ### 为什么 SoC 这么强，为什么 Intel 和 AMD 不这么干？
 
@@ -121,13 +121,13 @@ Apple 的统一内存架构试图解决所有这些问题，而不会有老式�
 
 AMD 也开始在部分芯片上采用更强大的 GPU，并逐步转向某种形式的 SoC，其中包括加速处理单元（APU），APU 基本上是将 CPU 内核和 GPU 内核置于同一硅片上。
 
-{{< image src="https://webp.slightsnow.com/2025/01/88f8178272c59e530c7ab478e31d4274.png" caption="AMD Ryzen 加速处理单元 (APU)，将 CPU 和 GPU（Radeon Vega）集成在一个芯片上。但不包含其他协处理器、IO 控制器或统一内存。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/88f8178272c59e530c7ab478e31d4274.png" caption="AMD Ryzen 加速处理单元 (APU)，将 CPU 和 GPU（Radeon Vega）集成在一个芯片上。但不包含其他协处理器、IO 控制器或统一内存。"  height="1000" width="500" >}}
 
 然而，它们做不到是有重要原因的。SoC 本质上是将整台计算机集成在一个芯片上，因此它更适合惠普和戴尔等真正的 PC 制造商。用一个比喻来说就是：如果你的商业模式是制造和销售汽车发动机，那么开始制造和销售整车将是一个巨大的变化。
 
 但是对 ARM 来说，这不是什么问题。惠普和戴尔可以简单地授权、购买、使用各种芯片技术（包括 ARM）和各种专用硬件，并把它们完成的设计送到代工厂进行生产，例如 GlobalFoundries 和台积电。
 
-{{< image src="https://webp.slightsnow.com/2025/01/7588ed6accdb79c1009620ffda10a46f.png" caption="台积电在台湾的半导体代工。台积电为 AMD、Apple、Nvidia 和 Qualcomm 等其他公司制造芯片。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/7588ed6accdb79c1009620ffda10a46f.png" caption="台积电在台湾的半导体代工。台积电为 AMD、Apple、Nvidia 和 Qualcomm 等其他公司制造芯片。"  height="1000" width="500" >}}
 
 这里就产生了一个大问题，Intel 和 AMD 商业模式基于销售通用 CPU，计算机厂商需要从不同供应商购买主板、内存、CPU 和显卡，并把它们集成到一个解决方案里面。但是在新的 SoC 世界，不再需要组装来自不同供应商的物理元件，而是需要组装不同供应商的 IP（知识产权）。从不同的供应商那里购买图形卡、CPU、调制解调器、IO 控制器和其他东西的设计，并利用这些设计在内部设计 SoC，然后由代工厂进行生产。
 
@@ -172,11 +172,11 @@ M1 上名为 Firestorm 的快速通用 CPU 内核速度非常快。这与过去�
 
 我们称这些为软件线程，而硬件线程意味着你可以使用实际的物理 CPU 内核来加快速度。
 
-{{< image src="https://webp.slightsnow.com/2025/01/c3b294803fbd16d7788b7d0164cd5c83.png" caption="image "  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/c3b294803fbd16d7788b7d0164cd5c83.png" caption="image "  height="1000" width="500" >}}
 
 线程的问题在于，软件开发人员必须编写所谓的多线程代码，这通常很困难。在过去，这是一些最难编写的代码。然而，服务器软件的多线程化往往很容易。只需在单独的线程上处理每个用户请求即可。因此，在这种情况下，拥有大量内核是一个明显的优势，特别是对于云服务而言。
 
-{{< image src="https://webp.slightsnow.com/2025/01/c35fc8b5bc62d057ec9fc7b4cbee0178.png" caption="Ampere Altra Max ARM CPU 有 128 个内核，专为云计算而设计，大量的硬件线程对云计算大有裨益。"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/c35fc8b5bc62d057ec9fc7b4cbee0178.png" caption="Ampere Altra Max ARM CPU 有 128 个内核，专为云计算而设计，大量的硬件线程对云计算大有裨益。"  height="1000" width="500" >}}
 
 正因为如此，Ampere 等 ARM CPU 制造商才会制造出像 Altra Max 这样拥有 128 个内核的 CPU。这种芯片专门为云计算而生。因为在云计算中，每瓦特要有尽可能多的线程，以处理尽可能多的并发用户，所以你不需要很强的单核性能。
 
@@ -190,7 +190,7 @@ M1 上名为 Firestorm 的快速通用 CPU 内核速度非常快。这与过去�
 
 要了解 OoOE 如何工作，需要了解一些关于内存的知识：在一个特定的内存位置请求数据是很慢的，但 CPU 能够同时获取多个字节。因此，在内存中获取 1 个特定字节所需的时间不会少于在内存中获取该字节之后的 100 个字节所需的时间。
 
-{{< image src="https://webp.slightsnow.com/2025/01/9359b414300688d35b39bdd645b16974.png" caption="挪威网上商店 [Komplett.no](http://komplett.no/) 仓库中的机器人拣选机"  height="1000" width="350" >}}
+{{< image src="https://webp.slightsnow.com/2025/01/9359b414300688d35b39bdd645b16974.png" caption="挪威网上商店 [Komplett.no](http://komplett.no/) 仓库中的机器人拣选机"  height="1000" width="500" >}}
 
 这里有一个类比：想想仓库里的拣货员，可以是上图中的红色小机器人。小机器人移动到分布在各处的多个地点需要时间，但从相邻的插槽中拾取物品却很快。计算机内存也非常类似，你可以快速获取相邻内存单元的内容。
 
