@@ -2,7 +2,7 @@
 date = '2025-03-19T17:50:14+08:00'
 lastmod = '2025-03-19T17:50:14+08:00'
 draft = false
-title = 'Lazy Load Conda and Nvm'
+title = 'zsh 启动提速，延迟加载 Conda 和 NVM'
 tags = ['Shell', 'Config']
 categories = ['Tool && Env']
 series = []
