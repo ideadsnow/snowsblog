@@ -4,22 +4,22 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
-title = "Snow's Site"
+title = "Snow's 的博客"
 theme = "DoIt"
 
 
 [params]
 # DoIt 主题版本
 version = "0.4.X"
-description = "This is a personal website of Snow.Z."
-keywords = ["Blog", "博客", "Snow", "SlightSnow", "Snow.Z", "SnowsSite"]
+description = "Snow.Z 的博客"
+keywords = ["Snow", "Snow.Z", "SlightSnow", "SnowsSite", "Blog", "博客"]
 
 [params.home.profile]
 # Gravatar 邮箱, 用于优先在主页显示的头像
 # gravatarEmail = "ideadsnow@gmail.com"
 enable = true
 avatarURL = "https://webp.slightsnow.com/avatar.jpg"
-title = "Hi, here is Snow."
+title = "你好, 我是 Snow.Z"
 
 
 [params.author]
