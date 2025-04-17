@@ -4,15 +4,15 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
-title = "Snow's 的博客"
+title = "Snow's 飘雪工坊"
 theme = "DoIt"
 
 
 [params]
 # DoIt 主题版本
 version = "0.4.X"
-description = "Snow.Z 的博客"
-keywords = ["Snow", "Snow.Z", "SlightSnow", "SnowsSite", "Blog", "博客"]
+description = "Snow's 飘雪工坊"
+keywords = ["Snow", "飘雪工坊", "SlightSnow", "Blog", "博客"]
 
 [params.home.profile]
 # Gravatar 邮箱, 用于优先在主页显示的头像
