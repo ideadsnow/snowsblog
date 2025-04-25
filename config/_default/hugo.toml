@@ -96,7 +96,7 @@ svgFavicon = "/favicon.svg"
 # URL of the LOGO
 logo = "/favicon.svg"
 # title name
-name = "Snow's Site"
+name = "Snow's 飘雪工坊"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = " "
 # you can add extra information after the name (HTML format is supported), such as icons
