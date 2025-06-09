@@ -152,4 +152,4 @@ priority = 0.5
 
 # Permalinks 配置
 [Permalinks]
-posts = "posts/:filename"
+posts = "posts/:contentbasename"
