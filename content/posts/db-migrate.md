@@ -7,7 +7,7 @@ tags = ['DB', 'Migration']
 categories = ['Engineering']
 series = []
 featured = true
-summary = '深入剖析数据库迁移中的 DTS 在线迁移与备份导入方案，从技术原理到实战避坑，提供完整的技术选型指南'
+summary = '深入剖析数据库迁移中的 DTS 在线迁移与备份导入方案'
 +++
 
 ## 引言：数据库迁移的核心挑战与诉求
